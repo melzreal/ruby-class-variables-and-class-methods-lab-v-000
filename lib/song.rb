@@ -29,7 +29,7 @@ class Song
   end
 
   def self.genre_count
-     @@genres.map{ |h| h}.uniq
+     @@genres.map{ |h| h}.uniq.to_h
   end
 
 
