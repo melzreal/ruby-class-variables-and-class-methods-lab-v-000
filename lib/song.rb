@@ -21,12 +21,11 @@ class Song
   end
 
   def artists
-    @@artists==@@artists.uniq!
+    @@artists
   end
 
   def genres
-    @@genres == @@genres.uniq!
-    @@genres
+    @@genres 
   end
 
   def genre_count
