@@ -23,8 +23,7 @@ class Song
   end
 
   def artists
-    @@artists == @artist.uniq!
-    @@artists
+    @@artists.uniq!
   end
 
   def genres
