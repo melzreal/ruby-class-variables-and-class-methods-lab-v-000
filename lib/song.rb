@@ -32,7 +32,7 @@ class Song
     Hash.new(0).tap{ |h| @@genres.each { |gen| h[gen] += 1 } }
   end
 
-  def artist_count
+  def self.artist_count
     Hash.new(0).tap{ |h| @@artists.each { |art| h[art] += 1 } }
   end
 
