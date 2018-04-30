@@ -13,6 +13,7 @@ class Song
     @name = name
     @artist = artist
     @genre = genre
+    
     @@artists << artist
     @@genres << genre
   end
@@ -22,7 +23,7 @@ class Song
   end
 
   def artists
-    @@artists == artist.uniq!
+    @@artists == @artist.uniq!
     @@artists
   end
 
