@@ -21,11 +21,13 @@ class Song
   end
 
   def artists
-    @@artists.uniq
+    arr = @@artists.uniq
+    arr
   end
 
   def genres
-    @@genres.uniq
+    arr = @@genres.uniq
+    arr
   end
 
   def genre_count
