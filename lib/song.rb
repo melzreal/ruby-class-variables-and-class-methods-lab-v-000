@@ -29,7 +29,7 @@ class Song
   end
 
   def self.genre_count
-     @@genres.map{ |h| h}.uniq.to_h
+     @@genres.inject(Hash.new(0)) { |h, i| h[i] += 1; h }.keys
   end
 
 
