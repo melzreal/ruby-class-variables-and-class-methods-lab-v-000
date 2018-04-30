@@ -29,7 +29,7 @@ class Song
   end
 
   def self.genre_count
-    @@genres.group_by{ |x| x }.map{ |y, ys| y if ys.size > 1 }.compact
+    @@genres.group_by{ |x| x }
   end
 
 
