@@ -21,19 +21,15 @@ class Song
   end
 
   def artists
-    arr = []
-    arr = @@artists.uniq
-    arr
+   @@artists.uniq!
   end
 
   def genres
-    arr = []
-    arr = @@genres.uniq
-    arr
+    @@genres.uniq!
   end
 
   def genre_count
-
+    xs.group_by { |x| x }.map { |y, ys| y if ys.size > 1 }.compact
   end
 
 
