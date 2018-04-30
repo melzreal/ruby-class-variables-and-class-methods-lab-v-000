@@ -21,11 +21,13 @@ class Song
   end
 
   def artists
+    arr = []
     arr = @@artists.uniq
     arr
   end
 
   def genres
+    arr = []
     arr = @@genres.uniq
     arr
   end
