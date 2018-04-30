@@ -28,7 +28,7 @@ class Song
     @@genres.uniq
   end
 
-  def genre_count
+  def self.genre_count
     @@genres.group_by{ |x| x }.map{ |y, ys| y if ys.size > 1 }.compact
   end
 
