@@ -26,9 +26,9 @@ class Song
     @@genres
   end
 
-  def genre_count 
-    
-  end 
+  def genre_count
+
+  end
 
 
 end
